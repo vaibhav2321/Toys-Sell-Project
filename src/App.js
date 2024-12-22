@@ -13,11 +13,12 @@ import Soft from './Product-page/Soft';
 import Contact from './Product-page/Contact';
 import Action from './Product-page/Action';
 import Puzzle from './Product-page/Puzzle';
+import { Fragment } from 'react';
 
 function App() {
   return (
 
-    <>
+    <Fragment>
       <BrowserRouter>
 
         <Navbar />
@@ -40,7 +41,7 @@ function App() {
         <Footer/>
       </BrowserRouter>
 
-    </>
+    </Fragment>
 
   );
 }

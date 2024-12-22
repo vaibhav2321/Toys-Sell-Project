@@ -16,9 +16,7 @@ export default function Login() {
 
           <div className="register">
             <h2>Log-In</h2>
-            <form id="register" method="post">
-
-              <br /><br />
+            <form id="register">
               <label>Email :</label>
               <br />
               <input type="email" name="email" id="email"
@@ -29,16 +27,15 @@ export default function Login() {
 
               <label>Password :</label>
               <br />
-              <input type="text" name="fname" id="name"
+              <input type="password" name="fname" id="name"
                 placeholder="Enter Your Password" />
 
 
 
-              <br /><br /><br /><br />
-              <input type="submit" value="Log-In" name="submit"
+              <br /><br />
+              <input type="button" value="Log-In" name="submit"
+              onClick={() => {window.location.href = '/'}}
                 id="submit" />
-
-
             </form>
           </div>
         </div>
